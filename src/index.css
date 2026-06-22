@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  /* === Sucesso Cell — Design Tokens === */
+  /* Inspirado em placa de circuito + microsoldagem: cobre, dourado-metal, grafite */
+  --color-void: #0a0a0b;
+  --color-graphite: #18181b;
+  --color-graphite-soft: #232327;
+  --color-gold: #c9a227;
+  --color-gold-bright: #e8c659;
+  --color-copper: #b5651d;
+  --color-copper-bright: #d9803a;
+  --color-bone: #f5f3ee;
+  --color-mist: #9a9a9e;
+
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --animate-pulse-slow: pulse-slow 3s ease-in-out infinite;
+  --animate-scan: scan 2.4s linear infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-void);
+  color: var(--color-bone);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-void);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--color-void); }
+::-webkit-scrollbar-thumb { background: var(--color-gold); border-radius: 4px; }
+
+/* Focus visibility (acessibilidade) */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--color-gold-bright);
+  outline-offset: 3px;
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, transparent 0%, var(--color-void) 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
