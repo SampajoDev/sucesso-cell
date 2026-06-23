@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import CircuitBackground from "./CircuitBackground";
 import { hero, stats, contact } from "../data/content";
+import logoSucessoCell from "/img/sucesso-cell-logo.PNG";
 
-// CORREÇÃO: Importando a logo diretamente para o bundler processar no build
-import logoSucessoCell from "/public/img/sucesso-cell-logo.PNG";
 
 const lineVariants = {
   hidden: { y: "100%" },
