@@ -105,9 +105,9 @@ export default function Hero() {
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
             <div className="absolute w-56 h-56 rounded-full bg-gold/10 blur-3xl" />
             <motion.img
-              src="/img/sucesso-cell-logo.png"
+              src="/img/sucesso-cell-logo.PNG"
               alt="Logo Sucesso Cell"
-              initial={{ opacity: 0, scale: 0.85 }}
+              initial={{ opacity: 0, scale: 7 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 1.1, ease: [0.16, 1, 0.3, 1] }}
               className="relative z-10 w-3/4 h-3/4 object-contain drop-shadow-[0_8px_24px_rgba(201,162,39,0.25)]"
