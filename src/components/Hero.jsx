@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import CircuitBackground from "./CircuitBackground";
 import { hero, stats, contact } from "../data/content";
-import logoSucessoCell from "/img/sucesso-cell-logo.PNG";
-
 
 const lineVariants = {
   hidden: { y: "100%" },
@@ -108,7 +106,6 @@ export default function Hero() {
             <div className="absolute w-56 h-56 rounded-full bg-gold/10 blur-3xl" />
             
             <motion.img
-              // CORREÇÃO: Utilizando a variável da imagem importada
               src="/img/sucesso-cell-logo.png"
               alt="Logo Sucesso Cell"
               initial={{ opacity: 0, scale: 0.85 }}
