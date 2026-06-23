@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import CircuitBackground from "./CircuitBackground";
 import { hero, stats, contact } from "../data/content";
 
+// CORREÇÃO: Importando a logo diretamente para o bundler processar no build
+import logoSucessoCell from "/public/img/sucesso-cell-logo.PNG";
+
 const lineVariants = {
   hidden: { y: "100%" },
   visible: (i) => ({
@@ -104,14 +107,17 @@ export default function Hero() {
           >
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
             <div className="absolute w-56 h-56 rounded-full bg-gold/10 blur-3xl" />
+            
             <motion.img
-              src="/img/sucesso-cell-logo.PNG"
+              // CORREÇÃO: Utilizando a variável da imagem importada
+              src={logoSucessoCell}
               alt="Logo Sucesso Cell"
               initial={{ opacity: 0, scale: 7 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 1.1, ease: [0.16, 1, 0.3, 1] }}
               className="relative z-10 w-3/4 h-3/4 object-contain drop-shadow-[0_8px_24px_rgba(201,162,39,0.25)]"
             />
+            
             <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-gold/10 blur-3xl" />
           </motion.div>
         </div>
