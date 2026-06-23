@@ -109,9 +109,9 @@ export default function Hero() {
             
             <motion.img
               // CORREÇÃO: Utilizando a variável da imagem importada
-              src="/img/sucesso-cell-logo.PNG"
+              src="/img/sucesso-cell-logo.png"
               alt="Logo Sucesso Cell"
-              initial={{ opacity: 0, scale: 7 }}
+              initial={{ opacity: 0, scale: 0.85 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 1.1, ease: [0.16, 1, 0.3, 1] }}
               className="relative z-10 w-3/4 h-3/4 object-contain drop-shadow-[0_8px_24px_rgba(201,162,39,0.25)]"
