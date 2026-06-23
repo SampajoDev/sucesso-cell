@@ -10,7 +10,7 @@ export const contact = {
 };
 
 export const hero = {
-  eyebrow: "13 anos de precisão técnica",
+  eyebrow: "14 anos de precisão técnica",
   headline: ["Cada solda conta", "uma história de", "precisão."],
   sub: "Microsoldagem, troca de telas e reparos que outras assistências recusam. Em Juiz de Fora, quando o problema é complexo, o caminho começa aqui.",
   ctaPrimary: "Pedir orçamento no WhatsApp",
@@ -18,8 +18,8 @@ export const hero = {
 };
 
 export const stats = [
-  { value: "13", suffix: "anos", label: "no mercado de JF" },
-  { value: "7", suffix: "anos", label: "pioneiros em troca de vidro" },
+  { value: "7", suffix: "anos", label: "no mercado de JF" },
+  { value: "14", suffix: "anos", label: "pioneiros em troca de vidro" },
   { value: "100", suffix: "%", label: "Excelência garantida" },
 ];
 
@@ -62,7 +62,7 @@ export const results = [
     before: "/img/ip17pmxquebrado.jpeg",
     after: "/img/ip17resolvido.jpeg",
     label: "iPhone 17 Pro Max",
-    detail: "Vidro traseiro",
+    detail: "Troca de Vidro",
   },
   {
     before: "/img/telaip11.jpeg",
@@ -87,8 +87,13 @@ export const results = [
 export const printGallery = [
   { src: "/img/duckdeadppol.jpeg", label: "Personagem sob encomenda" },
   { src: "/img/pinoquioempla.jpeg", label: "Peça colorida em PLA" },
-  { src: "/img/anjomiguel3d.jpeg", label: "Réplica detalhada" },
+  { src: "/img/anjomiguel3d.jpeg", label: "Peça detalhada" },
   { src: "/img/3ddebarro.jpeg", label: "Acabamento pintado à mão" },
+  { src: "/img/ninja3d.jpeg", label: "Peça detalhada" },
+  { src: "/img/sapo3d.jpeg", label: "Peça colorida em PLA" },
+  { src: "/img/patorap3d.jpeg", label: "Peça colorida em PLA" },
+  { src: "/img/marioamerica.jpeg", label: "Peça colorida em PLA" },
+  { src: "/img/guerreiro.jpeg", label: "Peça colorida em PLA" },
 ];
 
 export const testimonials = [
@@ -107,10 +112,25 @@ export const testimonials = [
       "Atendimento nota 1000, valores e condições justas. Vale a pena conferir, super indico!",
     name: "Jone Paiva",
   },
+  {
+    quote:
+      "Fiquei muito satisfeita com a troca de tela traseira do meu telefone (iPhone 13), ficou como novo. Atendimento perfeito e humanizado! Ambiente super agradável e loja linda! Muito obrigada, irei indicar com certeza",
+    name: "Fernanda Carolina",
+  },
+  {
+    quote:
+      "Loja excepcional ! Serviço excelente , preço justo ,recomendo mto !!",
+    name: "Beatriz Pessanha",
+  }, // <--- Corrigido: adicionada a vírgula aqui
+  {
+    quote:
+      "Troquei a tela do meu iPhone XR, na hora, tela perfeita",
+    name: "Andressa Fernandes da Cunha",
+  }
 ];
 
 export const about = {
-  name: "Marcel Sampaio",
+  name: "Marcel $ampaio",
   role: "Responsável técnico",
   photo: "/img/marcel sampaio.jpeg",
   bio: "Proprietário e especialista em reparos de alta complexidade. Formou a Sucesso Cell para resolver o que as outras assistências devolvem sem solução.",
