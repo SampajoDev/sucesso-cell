@@ -109,7 +109,7 @@ export default function Hero() {
             
             <motion.img
               // CORREÇÃO: Utilizando a variável da imagem importada
-              src={logoSucessoCell}
+              src="/img/sucesso-cell-logo.PNG"
               alt="Logo Sucesso Cell"
               initial={{ opacity: 0, scale: 7 }}
               animate={{ opacity: 1, scale: 1 }}
